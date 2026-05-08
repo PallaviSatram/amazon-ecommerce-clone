@@ -1,9 +1,9 @@
 import { cart, removeFromCart, updateDeliveryOption } from '../../data/cart.js';
-import { products } from "../../data/products.js";
+import { products,getProduct } from "../../data/products.js";
 import formatCurrency  from "../utils/money.js";
 import {hello} from 'https://unpkg.com/supersimpledev@1.0.1/hello.esm.js'; //ESM version default export in the code -- export function funname(){..}
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js'; // we can use it when we only want to export 1 thing
-import{deliveryOptions} from '../../data/deliveryOptions.js';
+import{deliveryOptions, getDeliveryOption} from '../../data/deliveryOptions.js';
 
 
 // const today = dayjs();
@@ -15,22 +15,12 @@ export function renderOrderSummary(){
 
   cart.forEach((cartItem) => {
     const productId = cartItem.productId;
-    let matchingProduct;
     
-    products.forEach((product) => {
-      if(product.id === productId)
-      {
-        matchingProduct = product;
-      }
-    });
+    const matchingProduct = getProduct(productId);
+    
     const deliveryOptionId = cartItem.deliveryOptionId;
 
-    let deliveryOption;
-    deliveryOptions.forEach((option) => {
-      if(option.id === deliveryOptionId){
-        deliveryOption = option;
-      }
-    }); 
+    const deliveryOption = getDeliveryOption(deliveryOptionId);
 
   const today = dayjs();
   const deliveryDate = today.add(deliveryOption.deliveryDays, 'days');

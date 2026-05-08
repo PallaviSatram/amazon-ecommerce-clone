@@ -4,7 +4,7 @@ import formatCurrency  from "../utils/money.js";
 import {hello} from 'https://unpkg.com/supersimpledev@1.0.1/hello.esm.js'; //ESM version default export in the code -- export function funname(){..}
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js'; // we can use it when we only want to export 1 thing
 import{deliveryOptions, getDeliveryOption} from '../../data/deliveryOptions.js';
-
+import { renderPaymentSummary } from './paymentSummary.js';
 
 // const today = dayjs();
 // const deliveryDate = today.add(7, 'days');
@@ -105,8 +105,10 @@ export function renderOrderSummary(){
       removeFromCart(productId);
 
       const conatiner = document.querySelector(
-        `.  js-cart-item-container-${productId}`);
+        `.js-cart-item-container-${productId}`);
         conatiner.remove();
+
+        renderPaymentSummary();
     });
   });
 
@@ -115,6 +117,7 @@ export function renderOrderSummary(){
       const {productId, deliveryOptionId} = element.dataset;
       updateDeliveryOption(productId, deliveryOptionId);
       renderOrderSummary(); // update the data and regenarate all the HTML // recursion
+      renderPaymentSummary();
     });
   });
 }

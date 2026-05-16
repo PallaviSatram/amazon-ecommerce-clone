@@ -1,5 +1,5 @@
 import { cart, removeFromCart, updateDeliveryOption } from '../../data/cart.js';
-import { products,getProduct } from "../../data/products.js";
+import { products, getProduct } from "../../data/products.js";
 import formatCurrency  from "../utils/money.js";
 import {hello} from 'https://unpkg.com/supersimpledev@1.0.1/hello.esm.js'; //ESM version default export in the code -- export function funname(){..}
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js'; // we can use it when we only want to export 1 thing
@@ -28,7 +28,7 @@ export function renderOrderSummary(){
 
     cartHTML += `<div class="cart-item-container 
           js-cart-item-container
-          js-cart-item-container-${matchingProduct.id}">
+        js-cart-item-container-${productId}">
               <div class="delivery-date">
                 Delivery date: ${datestring}
               </div>
@@ -123,5 +123,3 @@ export function renderOrderSummary(){
     });
   });
 }
-
-renderOrderSummary();

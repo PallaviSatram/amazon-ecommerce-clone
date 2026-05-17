@@ -84,7 +84,7 @@ export function loadProducts(fun){
 
     products.push(...newProducts);
     
-    console.log(products);
+    console.log('load products');
     fun();
   });
 

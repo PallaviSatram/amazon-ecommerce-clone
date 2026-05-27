@@ -1,28 +1,39 @@
-🛒 Amazon E-Commerce Clone
+# 🛒 Amazon E-Commerce Clone
 
-An Amazon-inspired e-commerce website built using HTML, CSS, and JavaScript.
-This project simulates a real online shopping experience with features like cart management, checkout flow, order tracking, and automated testing.
+A fully functional Amazon-inspired e-commerce website built using **HTML, CSS, and JavaScript**.
 
-🚀 Features
-🏠 Home page with product listings
-🛒 Add to Cart functionality
-➕ Update product quantities
-❌ Remove items from cart
-💳 Checkout page
-📦 Orders page
-🚚 Order tracking page
-💾 LocalStorage for data persistence
-⚡ Dynamic rendering using JavaScript
-🧪 Automated testing using Jasmine
-📱 Responsive design
+This project simulates a real online shopping experience with features like cart management, checkout flow, order tracking, dynamic product rendering, and automated testing using Jasmine.
 
-🛠️ Technologies Used
+---
+
+## 🚀 Features
+
+- 🏠 Responsive Home Page
+- 🛒 Add to Cart Functionality
+- ➕ Update Product Quantities
+- ❌ Remove Products from Cart
+- 💳 Checkout System
+- 📦 Orders Page
+- 🚚 Order Tracking Page
+- 💾 LocalStorage Data Persistence
+- ⚡ Dynamic Rendering with JavaScript
+- 🧪 Automated Testing using Jasmine
+- 📱 Responsive UI Design
+
+---
+
+## 🛠️ Technologies Used
+
 - HTML5
 - CSS3
 - JavaScript (ES6)
 - Jasmine Testing Framework
-  
-📂 Project Structure
+
+---
+
+## 📂 Project Structure
+
+```bash
 amazon-project/
 │
 ├── backend/
@@ -37,54 +48,72 @@ amazon-project/
 ├── checkout.html
 ├── orders.html
 └── tracking.html
+```
 
-⚙️ Installation & Setup
-1. Clone the Repository
-git clone https://github.com/YOUR_USERNAME/amazon-ecommerce-clone.git
-2. Open Project Folder
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/PallaviSatram/amazon-ecommerce-clone.git
+```
+
+### 2️⃣ Navigate to the Project Folder
+
+```bash
 cd amazon-ecommerce-clone
-3. Run the Project
+```
 
-Simply open:
+### 3️⃣ Run the Project
 
-amazon.html
+Open `amazon.html` in your browser.
 
-in your browser.
+---
 
-🧪 Running Tests
+## 🧪 Running Tests
 
-Open the Jasmine test file in browser:
+Open the Jasmine test file in your browser:
 
+```bash
 tests/tests.html
-🎯 Learning Outcomes
+```
 
-Through this project, I learned:
+---
+
+## 🎯 What I Learned
 
 - DOM Manipulation
 - JavaScript Modules
 - Object-Oriented Programming
 - Asynchronous JavaScript
 - LocalStorage Handling
-- Automated Testing
 - Dynamic UI Rendering
-  
-🌟 Future Improvements
+- Automated Testing with Jasmine
+
+---
+
+## 🌟 Future Improvements
+
 - User Authentication
-- Backend Integration (Node.js + Express)
-- Database Support (MongoDB)
+- Backend Integration using Node.js & Express
+- MongoDB Database Support
 - Payment Gateway Integration
 - Product Search & Filtering
-- Wishlist Functionality
+- Wishlist Feature
+---
 
-GitHub: https://github.com/PallaviSatram/amazon-ecommerce-clone/
-⭐ Show Your Support
+## ⭐ Support
 
 If you like this project:
 
-Give it a ⭐ on GitHub
-Fork the repository
-Share feedback
+- Give it a ⭐ on GitHub
+- Fork the repository
+- Share your feedback
 
-📜 License
+---
 
-This project is for educational purposes only and is inspired by Amazon UI/UX.
+## 📜 Disclaimer
+
+This project is created for educational purposes only and is inspired by Amazon UI/UX.

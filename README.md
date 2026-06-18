@@ -1,6 +1,6 @@
 # 🛒 Amazon E-Commerce Clone
 
-A fully functional Amazon-inspired e-commerce website built using **HTML, CSS, and JavaScript**.
+A fully functional Amazon-inspired e-commerce website built using **HTML, CSS, JavaScript, React.js**.
 
 This project simulates a real online shopping experience with features like cart management, checkout flow, order tracking, dynamic product rendering, and automated testing using Jasmine.
 
@@ -27,6 +27,7 @@ This project simulates a real online shopping experience with features like cart
 - HTML5
 - CSS3
 - JavaScript (ES6)
+- React.js
 - Jasmine Testing Framework
 
 ---
